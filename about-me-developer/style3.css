@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    background-image: url("img/whyhirebackground.webp");
+    background-size: cover;
+} 
+
+h1 {
+    text-align: center;
+    font-size: 65px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 55px;
+    letter-spacing: 5px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 180px;
+    padding: 3rem 2rem;
+    border-radius: 0.25rem;
+    opacity: 0;
+    animation: heading 2s 1s ease-out forwards;
+} 
+
+@keyframes heading {
+    100% {
+        opacity: 1;
+    }
+} 
+
+.text-box {
+    align-items: center;
+    font-size: 3rem;
+    color: #fff;
+    animation: slide-up 2s ease-in;
+    margin-left: 200px;
+    width: 65vw;
+} 
+
+li {
+    display: block;
+}
+
+
+@keyframes slide-up {
+    from {
+        opacity: 0.2;
+        line-height: 200px;
+    }
+
+    to {
+        opacity: 1;
+        line-height: 55px;
+    }
+} 
+
+button {
+    position: absolute;
+    left: 900px;
+    padding: 18px;
+    color: gray;
+    background-color: greenyellow;
+    border: none;
+    box-shadow: 7px 7px 8px darkgreen;
+    border-radius: 5px; 
+    margin-top: 60px;
+    animation: slide-up2 2s 3s ease-in;
+} 
+
+button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+} 
+
+@keyframes slide-up2 {
+    from {
+        opacity: 0.2;
+    }
+
+    to {
+        opacity: 1;
+    }
+} 
